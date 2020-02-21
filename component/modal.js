@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
+
 class Modal extends Component {
+    constructor(props){
+        super(props);
+    }
+
     render(){
         return(
           
@@ -14,7 +19,7 @@ class Modal extends Component {
                         </button>
                     </div>
                     <div className="modal-body">
-                        ...
+                        {this.props.estado.form.name}
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>

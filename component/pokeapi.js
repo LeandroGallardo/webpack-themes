@@ -12,7 +12,7 @@ class Pokeapi extends Component{
     }
   
     getPokes = async () =>{
-        const response= await Axios.get('https://pokeapi.co/api/v2/pokemon/')
+        const response = await Axios.get('https://pokeapi.co/api/v2/pokemon/')
         try{
            // console.log(response)
             this.setState({
